@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Online Grievance Redressal System</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <h5>
+      <a href="index.html">Home</a> &nbsp; <a href="form.html">Register Grievance</a> &nbsp; Reviews
+    </h5>
+  </div>
+  <h3>Enter the Following Details!</h3>
+  <div class="form2">
+    <form id="Form2" onsubmit="addComments(); return false">
+      Your Id <br><input type="number" id="id_" required> <br><br>
+      Your Name <br><input type="text" id="name_" pattern="[A-Za-z]+" required> <br><br>
+      Your Comment <br><textarea id="comment" rows="8" cols="50" required></textarea> <br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <br><br><br><br>
+  <div class="table">
+    <table id="id2">
+      <thead>
+        <tr>
+          <td>Id</td>
+          <td>Name</td>
+          <td>Comment</td>
+        </tr>
+      </thead>
+    </table>
+  </div>
+</body>
+</html>
